@@ -1,0 +1,44 @@
+.nav-btn {
+            text-decoration: none;
+            color: rgb(147, 147, 147);
+            font-size: 27px;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            color: aliceblue;
+            text-decoration: underline;
+        }
+
+        .nav-btn.active {
+            color: #bfd7f6;
+            text-decoration: underline;
+            font-weight: bold;}
+            
+
+body{
+    background-color: rgb(31, 31, 31)
+}            
+
+
+nav{
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) ;
+    border-radius: 20px;
+     margin: 15px;
+     position: sticky;
+      top: 15px;
+}
+
+a.nav_a{
+    text-decoration: none;
+    color: aliceblue;font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+img.nav_img{
+    text-decoration: none;
+        border-radius: 20px;vertical-align: middle;
+        height: 55px;
+}
