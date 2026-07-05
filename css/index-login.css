@@ -1,0 +1,94 @@
+.login-button {
+    font-size: 5px;
+    background-color: black;
+    text-decoration: none;
+    color: black;
+}
+
+/* 登入卡片主體 */
+.login-card {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* 標題 */
+.login-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 輸入框區塊 */
+.input-field {
+    margin-bottom: 18px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 0.85rem;
+    color: #666666;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+/* 輸入框聚焦狀態 */
+.input-field input:focus {
+    border-color: #333333;
+}
+
+/* 登入按鈕 */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #222222;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #000000;
+}
+
+
+/* 平常隱藏的遮罩層 */
+.modal-overlay {
+    display: none; /* 平常隱藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明黑底 */
+    backdrop-filter: blur(5px);           /* 背景毛玻璃模糊 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;                        /* 確保蓋在最上層 */
+}
+
+/* 當被加上 .active 類別時才顯示 */
+.modal-overlay.active {
+    display: flex;
+}
