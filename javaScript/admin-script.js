@@ -11,6 +11,7 @@ onAuthStateChanged(auth, (user) =>{
       <h2>管理員部落格後台</h2>
       <input type="text" id="title" placeholder="請輸入發想標題">
       <textarea id="content" placeholder="請輸入點子內容"></textarea>
+      <textarea id="img-url-input" placeholder="請輸入img url"></textarea>
       <button onclick="uploadIdea()">發布到「正在嘗試分頁」</button>
       <button onclick="handleLogout()">登出</button>
       
@@ -58,3 +59,21 @@ window.uploadIdea = async function() {
     alert("上傳失敗：" + error.message);
   }
 };
+
+// window.uploadIdea = async function() {
+//     let rawDriveUrl = document.getElementById("img-url-input").value; // 假設你後台多了一個圖片輸入框
+//     let finalImageUrl = "";
+//     if (rawDriveUrl.includes("drive.google.com")) {
+//         // 利用正則表達式把中間那串圖片 ID 抓出來
+//         const matches = rawDriveUrl.match(/\/d\/([^/]+)/);
+//         if (matches && matches[1]) {
+//             const imageId = matches[1];
+//             // 這是 Google Drive 專用的直連格式
+//             finalImageUrl = `https://lh3.googleusercontent.com/d/${imageId}`;
+//         }
+//     } else {
+//         // 如果是普通網址或本地路徑，維持原樣
+//         finalImageUrl = rawDriveUrl || "./img/default.png"; 
+//     }
+
+// };

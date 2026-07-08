@@ -1,0 +1,28 @@
+.loading-title {
+    color: aliceblue; text-align: center; font-size: 25px; padding: 50px;
+}
+
+
+.project-block {
+    margin-bottom: 100px; padding: 20px; position: relative;
+}
+
+.img-style {
+    text-align: right; padding-right: 150px;
+}
+
+img {
+    height: 350px; border-radius: 20px;
+}
+
+.channels-text {
+    color: aliceblue; text-align: left; font-size: 25px; margin-top: -350px; min-height: 350px; font-family: system-ui, sans-serif;
+}
+
+h1 {
+    font-size: 100px; margin: 0 0 20px 0;
+}
+
+p {
+    line-height: 1.8;
+}
