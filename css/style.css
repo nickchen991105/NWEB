@@ -37,6 +37,12 @@ body{
     overflow-x: hidden;
 }
 
+
+::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;                 /* Chrome / Safari / Edge */
+}
+
 /* 導航欄本體 */
 
 nav{

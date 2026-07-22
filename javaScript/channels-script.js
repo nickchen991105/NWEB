@@ -21,7 +21,7 @@ async function loadChannelContents() {
 
             let displayImg = "./img/{FF333F3D-D207-42D2-997C-41F33815D4E7}.png";
 
-       if (data.imgUrl && data.imgUrl.startsWith("http")) {
+       if (data.imgUrl && data.imgUrl.startsWith("https")) {
         let url = data.imgUrl;
 
         // 如果發現使用者貼的是 Google Drive 的網頁分享連結
@@ -43,7 +43,7 @@ async function loadChannelContents() {
             container.innerHTML += `
                 <div class="project-block">
                     <div class="img-style" class="project-img-wrapper">
-                        <img src="${displayImg}">
+                        <img src="${displayImg}", class="img-shadow">
                     </div>
                     <div class="channels-text project-content-wrapper">
                         <h1>&emsp;${data.title}</h1>
