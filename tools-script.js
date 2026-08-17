@@ -5,12 +5,7 @@ async function getMyBangumiAnime() {
     const container = document.getElementById("anime-list");
 
     try {
-        const response = await fetch(API_URL, {
-            method: "GET",
-            fetch: {
-                "User-Agent": "MyNewTabApp/1.0 (https://bgm.tv)"
-            }
-        });
+        const response = await fetch(API_URL)
         if (!response.ok) {
             throw new Error('連線失敗:${response.status}')
         }
