@@ -1,0 +1,51 @@
+ @font-face {
+        font-family: 'nick';
+        src: url(../font/jf-openhuninn-2.1.ttf) format('truetype');
+    }
+
+
+
+.loading {
+    color: aliceblue;
+    font-family: nick;
+    text-align: center;
+    font-size: 30px;
+}
+
+.anime-title {
+    font-size: 50px;
+    font-family: nick;
+    border-radius: 30px;
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 60px;
+    transform: translatey(-190px);
+}
+
+.anime-img {
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: -60px;
+    
+}
+
+.title {
+    color: aliceblue;
+    font-family: nick;
+    text-align: center;
+    font-size: 100px;
+}
+
+.anime-item {
+    background-color: rgba(254, 254, 254, 0.158);
+    border-radius: 50px;
+    box-shadow: 0 0 5px white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .anime-item:hover {
+        transform: scale(1.009);
+        background-color: rgba(255, 255, 255, 0.289);
+    }
