@@ -1,16 +1,11 @@
 const USERNAME = "1274014";
-const API_URL = 'https://api.bgm.tv/v0/users/1274014/collections?subject_type=2&type=3&limit=30';
+const API_URL = 'https://api.bgm.tv/v0/users/1274014/collections?subject_type=2&type=3';
 
 async function getMyBangumiAnime() {
     const container = document.getElementById("anime-list");
 
     try {
-        const response = await fetch(API_URL, {
-            method: "GET",
-            headers: {
-                "User-Agent": "MyNewTabApp/1.0 (https://bgm.tv)"
-            }
-        });
+        const response = await fetch(API_URL)
         if (!response.ok) {
             throw new Error('連線失敗:${response.status}')
         }
@@ -41,7 +36,7 @@ async function getMyBangumiAnime() {
     });
     } catch (error) {
         console.error("抓取失敗：", error);
-        container.innerText = "無法載入收藏，請檢查用戶 ID 是否正確。";
+        container.innerText = "連線失敗原因：${error.name} - ${error.message}";
     }
 }
 
