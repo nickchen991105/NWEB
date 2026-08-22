@@ -5,6 +5,13 @@
 
 
 
+body {
+     background-image: url(../img/tools-baclground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .loading {
     color: aliceblue;
     font-family: nick;
@@ -42,6 +49,18 @@ color: aliceblue;
     font-family: nick;
     text-align: center;
     font-size: 100px;
+    font-size: clamp(20px, 6vw, 190px);
+}
+
+.title-back {
+    background-color: rgba(254, 254, 254, 0.158);
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 30px;
+    padding: 2px;
+    backdrop-filter: blur(9px);
+    box-shadow: 0 0 5px white;
+    
 }
 
 .anime-item {
@@ -51,6 +70,7 @@ color: aliceblue;
     margin-top: 20px;
     box-shadow: 0 0 5px white;
     padding: 30px;
+    backdrop-filter: blur(20px);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 

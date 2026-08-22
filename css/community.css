@@ -5,48 +5,58 @@
 
 
 
+body {
+    background-image: url(../img/community-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
 .community-style {
-      background-color: rgba(182, 206, 221, 0.275);
-      border-radius: 30px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+    position: relative;
+    background-color: rgba(254, 254, 254, 0.158);
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px white;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
       
-}   
+}
+
+    .community-style:hover {
+        transform: scale(1.009);
+        background-color: rgba(255, 255, 255, 0.289);
+    }
 
 
 .link-btn {
     text-decoration: none;
-    font-size: 70px;
-    font-family: nick;
-    display: block;
-    padding-left: 150px ;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    line-height: 1.4;
-
-    background-image: linear-gradient(to top, transparent 50%, #000000 50%);
-
-    background-size: 100% 200%;
-    background-position: 0 0;
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    background-color: #ffffff;
+    display: flex;
+    align-items: center;  /* 垂直置中對齊 */
+    gap: 30px;            /* 圖片與文字的間距 */
+    align-items: center;
     
-    transition: transform 0.3s ease, background-position 0.4s ease-out;
 
-   
+ }
+
+.link-btn-tittle {
     
+    color: aliceblue;
+  font-family: nick;
+  border-radius: 30px;
+  
+  /* 寬度與自動換行設定 */
+  flex: 1;              /* 自動佔滿剩餘寬度 */
+  margin: 0;            /* 移除原本的 negative margin */
+  transform: none;      /* 移除 translateY，交給 flex 垂直置中 */
+  word-break: break-word; /* 允許過長文字自動換行 */
+  line-height: 1.4;
+
+  /* 動態字體大小：大螢幕維持 50px，螢幕變窄時自動調小，最小不低於 24px */
+  font-size: clamp(24px, 10.5vw, 100px);
 }
-
-
-    .link-btn:hover {
-        transform: scale(1.05);
-        background-position: -100% 100%; 
-    
-    }
-
 
 
