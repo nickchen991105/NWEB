@@ -53,7 +53,7 @@ color: aliceblue;
 }
 
 .title-back {
-    background-color: rgba(254, 254, 254, 0.158);
+    background-color: rgba(0, 0, 0, 0.158);
     margin: 0 auto;
     width: 30%;
     border-radius: 30px;
@@ -65,7 +65,7 @@ color: aliceblue;
 
 .anime-item {
     position: relative;
-    background-color: rgba(254, 254, 254, 0.158);
+    background-color: rgba(0, 0, 0, 0.158);
     border-radius: 50px;
     margin-top: 20px;
     box-shadow: 0 0 5px white;
@@ -76,7 +76,7 @@ color: aliceblue;
 
     .anime-item:hover {
         transform: scale(1.009);
-        background-color: rgba(255, 255, 255, 0.289);
+        background-color: rgba(119, 119, 119, 0.374);
     }
 
 .ep {
