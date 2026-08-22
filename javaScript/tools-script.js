@@ -20,15 +20,21 @@ async function getMyBangumiAnime() {
       const cover = anime.images?.medium || "";  // 動畫封面
       const epStatus = item.ep_status || 0;     // 當前看到第幾集
       const animeid = item.subject.id;  // 動漫ID
+      const summary = anime.short_summary || "暫無簡介"; //簡介
 
       // 建立 HTML 元素
       const card = document.createElement("div");
       card.className = "anime-card";
-      card.innerHTML = `<a href=https://bgm.tv/subject/${animeid} target="_blank" style=" text-decoration: none;"><div class="anime-item">
-        <img src="${cover}" alt="${title}" class="anime-img"/>
-        <p class="anime-title">${title}</p>
-        <p class="ep">進度：第 ${epStatus} 話</p>
-      </div></a>
+      card.innerHTML = `<div class="anime-item"><a href=https://bgm.tv/subject/${animeid} target="_blank" style=" text-decoration: none;">
+        
+      <div class="card-content"><img src="${cover}" alt="${title}" class="anime-img"/>
+        <p class="anime-title">${title}</p></div>
+
+        <p2 class="ep">進度：第 ${epStatus} 話</p2>
+      </a>
+      <p class="anime-more">${summary}</p>
+      
+      </div>
         
       `;
 
