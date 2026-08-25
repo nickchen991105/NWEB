@@ -27,14 +27,14 @@ async function getMyBangumiAnime() {
       card.className = "anime-card";
       card.innerHTML = `<div class="anime-item"><a href=https://bgm.tv/subject/${animeid} target="_blank" style=" text-decoration: none;">
         
-      <div class="card-content"><img src="${cover}" alt="${title}" class="anime-img"/>
+      <div class="card-content">
+      <img src="${cover}" alt="${title}" class="anime-img"/>
         <p class="anime-title">${title}</p></div>
 
         <p2 class="ep">進度：第 ${epStatus} 話</p2>
-      </a>
-      <p class="anime-more">${summary}</p>
-      
-      </div>
+        <p class="anime-more">${summary}</p>
+        </a>
+        </div>
         
       `;
 

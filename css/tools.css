@@ -65,7 +65,7 @@ color: aliceblue;
 
 .anime-item {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgba(0, 0, 0, 0.542);
     border-radius: 50px;
     margin-top: 20px;
     box-shadow: 0 0 5px white;
@@ -76,14 +76,14 @@ color: aliceblue;
 
     .anime-item:hover {
         transform: scale(1.009);
-        background-color: rgba(119, 119, 119, 0.374);
+        background-color: rgba(48, 48, 48, 0.495);
     }
 
 .ep {
     position: absolute;
   top: 25px;
   right: 35px;
-  color: aliceblue;
+  color: rgb(195, 207, 217);
   font-size: 1.5rem;
   font-family: nick;
     
@@ -96,3 +96,25 @@ color: aliceblue;
     align-items: flex-start;
     margin-top: 20px;          
 }
+
+.anime-more {
+    color: rgb(195, 207, 217);
+  font-size: 1.5rem;
+  font-family: nick;
+  /* 寬度與自動換行設定 */
+  flex: 1;              /* 自動佔滿剩餘寬度 */
+  margin: 0;            /* 移除原本的 negative margin */
+  transform: none;      /* 移除 translateY，交給 flex 垂直置中 */
+  word-break: break-word; /* 允許過長文字自動換行 */
+  line-height: 1.4;
+
+  /* 動態字體大小：大螢幕維持 50px，螢幕變窄時自動調小，最小不低於 24px */
+  font-size: clamp(14px, 3.5vw, 30px);  
+  transition: color 0.3s ease;
+  
+}
+
+.anime-more:hover {
+    color: aliceblue;
+}
+
